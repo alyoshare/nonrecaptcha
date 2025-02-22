@@ -26,6 +26,8 @@ h1 {
 .image-container img {
   width: 15rem;
   height: 15rem;
+  max-width: 30vmin;
+  max-height: 30vmin;
   border: 2px solid transparent;
 }
 .image-container.selected img {
