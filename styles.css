@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+.container {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+.image-container img {
+  width: 15rem;
+  height: 15rem;
+  border: 2px solid transparent;
+}
+.image-container.selected img {
+  border-color: #007bff;
+}
+.image-container.selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 123, 255, 0.3);
+  z-index: 1;
+}
+.image-container.correct::before,
+.image-container.incorrect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.6);
+  z-index: 1;
+}
+.image-container.correct::after,
+.image-container.incorrect::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 2;
+}
+.image-container.correct::after {
+  content: "✓";
+  background-color: #28a745;
+  color: white;
+}
+.image-container.incorrect::after {
+  content: "✕";
+  background-color: #dc3545;
+  color: white;
+}
+.checkbox {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 3px;
+}
+.image-container.selected .checkbox::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #007bff;
+  font-weight: bold;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}

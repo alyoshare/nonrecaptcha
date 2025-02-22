@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Recaptcha Demo</title>
+    <script>
+      const config = {
+        leaf: [
+          "./images/leaf-5.jpg",
+          "./images/leaf-4.jpg",
+          "./images/fish-6.jpg",
+          "./images/leaf-3.jpg",
+          "./images/leaf-2.jpg",
+          "./images/whale-2.jpg",
+          "./images/whale-3.jpg",
+          "./images/whale-1.jpg",
+          "./images/router-4.jpg",
+        ],
+        cellphone: [
+          "./images/cellphone-4.jpg",
+          "./images/cellphone-3.jpg",
+          "./images/cellphone-2.jpg",
+          "./images/cellphone-5.jpg",
+          "./images/rice-1.jpg",
+          "./images/rice-2.jpg",
+          "./images/rice-4.jpg",
+          "./images/rice-3.jpg",
+          "./images/hydrant-2.jpg",
+        ],
+        fish: [
+          "./images/fish-4.jpg",
+          "./images/fish-3.jpg",
+          "./images/fish-2.jpg",
+          "./images/whale-1.jpg",
+          "./images/fish-1.jpg",
+          "./images/burger-4.jpg",
+          "./images/burger-2.jpg",
+          "./images/burger-3.jpg",
+          "./images/burger-1.jpg",
+        ],
+        car: [
+          "./images/car-5.jpg",
+          "./images/car-2.jpg",
+          "./images/car-4.jpg",
+          "./images/car-1.jpg",
+          "./images/car-3.jpg",
+          "./images/apple-5.jpg",
+          "./images/apple-2.jpg",
+          "./images/apple-3.jpg",
+          "./images/hydrant-3.jpg",
+        ],
+        horse: [
+          "./images/horse-3.jpg",
+          "./images/horse-5.jpg",
+          "./images/horse-4.jpg",
+          "./images/horse-2.jpg",
+          "./images/horse-1.jpg",
+          "./images/backpack-4.jpg",
+          "./images/backpack-3.jpg",
+          "./images/backpack-2.jpg",
+          "./images/hydrant-4.jpg",
+        ],
+        router: [
+          "./images/router-2.jpg",
+          "./images/router-1.jpg",
+          "./images/router-3.jpg",
+          "./images/bulb-4.jpg",
+          "./images/bulb-2.jpg",
+          "./images/bulb-3.jpg",
+          "./images/bulb-1.jpg",
+          "./images/donkey-4.jpg",
+          "./images/donkey-3.jpg",
+        ],
+        apple: [
+          "./images/apple-1.jpg",
+          "./images/apple-4.jpg",
+          "./images/backpack-1.jpg",
+          "./images/burger-1.jpg",
+          "./images/cellphone-1.jpg",
+          "./images/donkey-1.jpg",
+          "./images/donkey-2.jpg",
+          "./images/apple-3.jpg",
+          "./images/horse-2.jpg",
+        ],
+        GOD: [
+          "./images/ggod/ggod-1.jpg",
+          "./images/ggod/ggod-2.jpg",
+          "./images/ggod/ggod-3.jpg",
+          "./images/ggod/ggod-4.jpg",
+          "./images/ggod/ggod-5.jpg",
+          "./images/ggod/ggod-6.jpg",
+          "./images/ggod/ggod-7.jpg",
+          "./images/ggod/ggod-8.jpg",
+          "./images/ggod/ggod-9.jpg",
+        ],
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title"></h1>
+      <div id="grid" class="grid"></div>
+      <button id="submit">Submit</button>
+    </div>
+
+    <script src="./recaptcha.js"></script>
+  </body>
+</html>
